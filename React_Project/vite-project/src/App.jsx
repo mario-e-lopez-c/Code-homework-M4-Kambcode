@@ -1,16 +1,57 @@
 import React from 'react';
-import exampleImage from './images/christophwaltz.png';
+import Details from './components/Details';
+import Titles from './components/Titles';
+import Image from './components/Image';
+// import CharacterCard from './components/CharacterCard';
+import Card from './components/Card';
+import bethImage from './images/Beth_smith.png';
+import rickImage from './images/rick_sanchez.png';
+import mortyImage from './images/morty_smith.png';
+import backgroundImage from './images/rick-and-morty-minimal-night.jpg'
+import './App.css';
 
+const divStyle = {
+  backgroundImage: `url(${backgroundImage})`,
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  width: '100vw',
+  height: '100vh',
+  display: 'flex',
+  justifyContent: 'center',
+  flexWrap: 'wrap'
+}
 function App() {
   return (
-    <div>
-      <h1>Artista/personaje Favorito</h1>
-      <img src={exampleImage} alt="Foto Christoph Waltz" />
-      <p>
-        Cristoph Waltz es un actor austroalemán. Ganador del premio Oscar al mejor actor de reparto
-        en dos ocasiones por sus interpretaciones en INglorious Basterds y en Django Unchained, ambdas 
-        películas del director Quentin Tarantino.
-      </p>
+    <div style={divStyle}>
+      <Card
+        title="Beth Smith"
+        imageUrl={bethImage}
+        genre="Female"
+        status="Alive"
+      />
+      <Card
+       title="Rick Sanchez"
+       imageUrl={rickImage}
+       genre="Male"
+       status="Alive"
+       />
+      <Card
+       title="Morty Smith"
+       imageUrl={mortyImage}
+       genre="Male"
+       status="Alive"
+      />
+      {/* <Titles
+        title={'Beth Smith'}
+        />
+        <Image
+          url={exampleImage} 
+        />
+        <Details
+          genre={'Femenino'} 
+          status={'Alive'} 
+        /> */}
     </div>
   );
 }
