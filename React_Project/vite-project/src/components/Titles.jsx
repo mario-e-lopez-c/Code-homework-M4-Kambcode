@@ -10,9 +10,10 @@ function Titles(props) {
     borderRadius: '5px',
     width: '200px',
     marginLeft: '750px',
-    marginTop: '0px'
+    marginTop: '0px',
+    justifyContent: 'center'
   };
-
+  const name = 'name: '
   return <div style={divStyles}>{props.title}</div>;
 }
 
