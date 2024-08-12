@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 
 
 function RickAndMortyCharacterCard(props) {
+    
     const rickAndMortyCharacterId = props.id;
 
     const [name, setName] = useState("");
