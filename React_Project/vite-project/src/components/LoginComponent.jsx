@@ -6,19 +6,18 @@ import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from 'r
 const LoginComponent = () => {
 
     const divStyle = {
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        width: '100vw',
-        height: '100vh',
+        // backgroundImage: `url(${backgroundImage})`,
+        // backgroundPosition: 'center',
+        // backgroundSize: 'cover',
+        // backgroundRepeat: 'no-repeat',
+        width: '100%',
+        // height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         flexWrap: 'wrap'
       }
     
     const divFormStyle = {
-        // backgroundColor: 'blue',
         backdropFilter: 'blur(3px)',
         color: 'white',
         padding: '10px 20px',
@@ -60,7 +59,7 @@ const LoginComponent = () => {
   };
 
   return (
-    <div style={divStyle}>
+    <div style={divStyle} >
       {error && <p>{error}</p>}
       <div style={divFormStyle}>
         <form style={formStyle} onSubmit={handleSubmit}>

@@ -18,28 +18,28 @@ const CardContainer = styled.div`
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px;
-  height: 500px;
+  width: 200px;
+  height: 380px;
   margin: 16px;
   backdrop-filter: blur(5px);
 `;
 
 const CardImage = styled.img`
   width: 100%;
-  height: 300px;
+  height: 50%;
   object-fit: cover;
   transform: scale(calc(1 + (var(--hover, 0) * 0.25))) rotate(calc(var(--hover, 0) * -5deg));
   transition: transform 0.2s;
 `;
 
 const CardContent = styled.div`
-  padding: 16px;
+  padding: 2px;
   textAlign: 'center'
 `;
 
-const CardTitle = styled.h2`
+const CardTitle = styled.h3`
   margin: 0;ss
-  font-size: 1.5em;
+  font-size: 0.2em;
   color: #00FF10;
   border: 3px solid #e0e0e0;
   border-radius: 9px;
@@ -50,7 +50,7 @@ const CardTitle = styled.h2`
   align-items: center;
 `;
 
-const CardText = styled.h3`
+const CardText = styled.h4`
   font-size: 1.3em;
   color: #00FF00;
   border: 1px solid #e0e0e0;
@@ -60,7 +60,7 @@ const CardText = styled.h3`
   justify-items: center;
   align-items: center;
 `;
-const CardText2 = styled.h3`
+const CardText2 = styled.h4`
   font-size: 1em;
   color: #00FF00;
   border: 1px solid #e0e0e0;

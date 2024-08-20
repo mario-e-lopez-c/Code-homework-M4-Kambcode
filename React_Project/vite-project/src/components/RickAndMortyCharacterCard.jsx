@@ -1,6 +1,8 @@
 import React from "react";
 import CharacterCard from './CharacterCard';
 import { useEffect, useState } from 'react'
+import { Link, NavLink } from "react-router-dom";
+import logo from '../assets/pngwing.com.png';
 
 
 function RickAndMortyCharacterCard(props) {
@@ -26,12 +28,14 @@ function RickAndMortyCharacterCard(props) {
 
     return(
         <div>
-            <CharacterCard
-                title={name}
-                imageUrl={image}
-                genre={species}
-                status={status}
-            />
+            <div>
+                <CharacterCard
+                    title={name}
+                    imageUrl={image}
+                    genre={species}
+                    status={status}
+                />
+            </div>
         </div>
     )
 }
